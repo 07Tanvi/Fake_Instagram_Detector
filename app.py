@@ -125,7 +125,7 @@ data = pd.read_csv("final-v1.csv")
 X = data.drop("is_fake", axis=1)
 y = data["is_fake"]
 
-# ---------------- TRAIN MODEL ----------------
+
 model = RandomForestClassifier()
 model.fit(X, y)
 
@@ -138,7 +138,7 @@ st.markdown("""
 
 st.markdown("""
 <div class='subtitle'>
-Detect Fake & Suspicious Instagram Accounts Using AI
+Detect Fake & Suspicious Instagram Accounts Using Machine Learning
 </div>
 """, unsafe_allow_html=True)
 
@@ -153,7 +153,7 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.markdown("""
     <div class='metric-box'>
-    🧠 AI Engine<br>
+    🧠 ML Algorithm<br>
     Random Forest
     </div>
     """, unsafe_allow_html=True)
@@ -317,6 +317,6 @@ st.write("---")
 
 st.markdown("""
 <div class='footer'>
-🕵️ Powered by Artificial Intelligence & Machine Learning
+🕵️ Powered by  Machine Learning Technology
 </div>
 """, unsafe_allow_html=True)
