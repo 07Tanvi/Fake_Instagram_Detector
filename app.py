@@ -109,11 +109,6 @@ st.markdown("""
     box-shadow: 0 5px 18px rgba(0,0,0,0.3);
 }
 
-/* Section Headings */
-h2, h3 {
-    color: #bfdbfe !important;
-}
-
 /* Footer */
 .footer {
     text-align:center;
@@ -302,7 +297,7 @@ if st.button("🕵️ START INVESTIGATION"):
 
         st.markdown(f"""
         <div class='result-fake'>
-        🚨 SUSPICIOUS / FAKE ACCOUNT DETECTED<br><br>
+        🚨 FAKE INSTAGRAM ACCOUNT DETECTED<br><br>
         Investigation Confidence: {probability[0][1]*100:.2f}%
         </div>
         """, unsafe_allow_html=True)
@@ -311,7 +306,7 @@ if st.button("🕵️ START INVESTIGATION"):
 
         st.markdown(f"""
         <div class='result-real'>
-        ✅ AUTHENTIC ACCOUNT VERIFIED<br><br>
+        ✅ AUTHENTIC INSTAGRAM ACCOUNT VERIFIED<br><br>
         Investigation Confidence: {probability[0][0]*100:.2f}%
         </div>
         """, unsafe_allow_html=True)
